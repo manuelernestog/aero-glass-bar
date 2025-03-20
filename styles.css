@@ -9,7 +9,7 @@
 .yasb-bar {
 	padding: 0 8px;
 	margin: 0;
-    background-color: rgba(30, 30, 46, 0.25);
+    background-color: rgba(0, 0, 0, 0.604);
 }
 .widget {
 	padding: 0 8px;
@@ -20,25 +20,6 @@
 }
 .widget .label.alt {
 	padding: 1px 8px 1px 8px;
-}
-.komorebi-workspaces,
-.komorebi-active-layout  {
-    margin: 0;
-    padding: 0;
-}
-.komorebi-workspaces .ws-btn {
-	font-size: 16px;
-    background-color: transparent;
-	margin: 0 4px 0 4px;
-	color: #95a0ad;
-}
-.komorebi-workspaces .ws-btn.populated {
-	color: #a0c3ee;
-}
-.komorebi-workspaces .ws-btn:hover,
-.komorebi-workspaces .ws-btn.populated:hover,
-.komorebi-workspaces .ws-btn.active {
-	color: #c2daf7;
 }
 .apps-widget {
     padding: 0 4px;
