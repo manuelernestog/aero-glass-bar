@@ -121,7 +121,7 @@
 /* MEDIA WIDGET */
 .media-widget {
 	padding: 0;
-	margin: 0 3px;
+	margin: 0 4px;
 	border-radius: 16px;
 }
 .media-widget .label {
@@ -131,10 +131,10 @@
 .media-widget .btn {
 	color: #ffffff;
 	padding: 0 0;
-	margin: 4px 0;
+	margin: 4px -1;
     font-weight: 500;
 	font-family: Segoe Fluent Icons;
-	font-size: 9px;
+	font-size: 8px;
 }
 .media-widget .btn:hover {
 	color: #ffffff;
@@ -145,7 +145,7 @@
 .media-widget .btn.disabled:hover,
 .media-widget .btn.disabled {
 	color: #7d8297;
-	font-size: 9px;
+	font-size: 8px;
 	background-color: rgba(0, 0, 0, 0);
 }
 
@@ -190,8 +190,7 @@
 }
 
 .systray .button[dragging=true] {
-    background: orange;
-    border-color: #FF8800;
+    border-color: rgba(211, 211, 211, 0.705);
 }
 
 .systray .unpinned-visibility-btn {
