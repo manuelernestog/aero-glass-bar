@@ -178,8 +178,8 @@ widgets:
       system_menu: true
       power_menu: true
       blur: true
-      border_color: "None"
-      round_corners_type: "small"
+      border_color: "System"
+      round_corners_type: "normal"
       container_padding:
         top: 0
         left: 6
