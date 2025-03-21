@@ -57,9 +57,6 @@ widgets:
       controls_only: false
       controls_left: true
       hide_empty: true
-      thumbnail_alpha: 100
-      thumbnail_padding: 8
-      thumbnail_corner_radius: 0 # Set to 0 for square corners
       icons:
         prev_track: "\ue892"
         next_track: "\ue893"
@@ -84,6 +81,8 @@ widgets:
       #locale: 'en_EN' # Langugae for date, you can set your own, example fr_FR
       timezones: [] #Looking up time zone info from registry
       #timezones: ["America/Montreal"]
+      callbacks:
+        on_left: "exec notification_center"
   weather:
     type: "yasb.weather.WeatherWidget"
     options:
@@ -163,6 +162,7 @@ widgets:
         icon_format: "{charging_icon}"
       callbacks:
         on_left: "exec quick_settings"
+        on_right: "exec cmd.exe /c start ms-settings:powersleep"
   wifi:
     type: "yasb.wifi.WifiWidget"
     options:
@@ -189,4 +189,4 @@ widgets:
       label_position: "left" # Can be "left" or "right"
       icon_size: 16 # Can be any integer between 8 and 64
       pin_click_modifier: "alt" # Can be "ctrl", "alt" or "shift"
-      show_unpinned: true
+      show_unpinned: false
