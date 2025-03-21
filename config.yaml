@@ -24,7 +24,7 @@ bars:
       windows_app_bar: true
     dimensions:
       width: "100%"
-      height: 32
+      height: 30
     widgets:
       left:
         [
@@ -37,7 +37,10 @@ bars:
       right:
         [
           "media",
+          "systray",
           "volume",
+          "battery",
+          "wifi",
           "apps",
           "power_menu"
         ]
@@ -104,7 +107,7 @@ widgets:
   volume:
     type: "yasb.volume.VolumeWidget"
     options:
-      label: "<span>{icon}</span> {level}"
+      label: "{icon}"
       label_alt: "{volume}"
       volume_icons:
         - "\ueee8"  # Icon for muted
@@ -114,6 +117,7 @@ widgets:
         - "\uf028"  # Icon for 61-100% volume
       callbacks:
         on_right: "exec cmd.exe /c start ms-settings:sound"
+        on_left: "exec quick_settings"
   power_menu:
     type: "yasb.power_menu.PowerMenuWidget"
     options:
@@ -135,14 +139,13 @@ widgets:
     options:
       label: "{data}"
       app_list:
-        - {icon: "\uf0a2", launch: "notification_center"}
-        - {icon: "\uf422", launch: "search"}
         - {icon: "\ueb51", launch: "quick_settings"}
+        - {icon: "\uf0a2", launch: "notification_center"}
       container_padding: 
         top: 0
-        left: 8
+        left: 0
         bottom: 0
-        right: 8
+        right: 0
   win_button:
     type: "yasb.custom.CustomWidget"
     options:
@@ -151,3 +154,39 @@ widgets:
       class_name: "win-button-widget"
       callbacks:
         on_left: "exec start_menu"
+  battery:
+    type: "yasb.battery.BatteryWidget"
+    options:
+      label: "{icon}"
+      label_alt: "{icon} {percent}%"
+      charging_options:
+        icon_format: "{charging_icon}"
+      callbacks:
+        on_left: "exec quick_settings"
+  wifi:
+    type: "yasb.wifi.WifiWidget"
+    options:
+      label: "<span>{wifi_icon}</span>"
+      label_alt: "{wifi_name} {wifi_strength}%"
+      update_interval: 5000
+      callbacks:
+        on_left: "exec quick_settings"
+        on_middle: "do_nothing"
+        on_right: "exec cmd.exe /c start ms-settings:network"
+      wifi_icons: [
+        "\udb82\udd2e",  # Icon for 0% strength
+        "\udb82\udd1f",  # Icon for 1-20% strength
+        "\udb82\udd22",  # Icon for 21-40% strength
+        "\udb82\udd25",  # Icon for 41-80% strength
+        "\udb82\udd28"   # Icon for 81-100% strength
+      ]
+  systray:
+    type: "yasb.systray.SystrayWidget"
+    options:
+      class_name: "systray"
+      label_collapsed: "▼"
+      label_expanded: "▶"
+      label_position: "left" # Can be "left" or "right"
+      icon_size: 16 # Can be any integer between 8 and 64
+      pin_click_modifier: "alt" # Can be "ctrl", "alt" or "shift"
+      show_unpinned: true

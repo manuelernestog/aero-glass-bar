@@ -1,6 +1,6 @@
 * {
 	font-size: 13px;
-	color: #cdd6f4;
+	color: #ffffff;
 	font-weight: 600;
 	font-family: "Segoe UI","JetBrainsMono NFP";
 	margin: 0;
@@ -22,17 +22,15 @@
 	padding: 1px 8px 1px 8px;
 }
 .apps-widget {
-    padding: 0 4px;
+    padding: 0;
 }
 .apps-widget .widget-container {
-    background-color: rgba(255, 255, 255, 0.1);
-    margin: 5px 0 4px 0;
-    border-radius: 13px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: transparent;
 }
 .apps-widget .label {
 	font-size: 14px;
 	padding:0px 2px 1px 2px;
+	margin: 0 8px;
 }
 .apps-widget .label:hover {
 	color: #fff;
@@ -159,8 +157,62 @@
     margin: 0;
 }
 .taskbar-widget .app-icon {
-    padding:0 6px;
+    padding: 0 8px;
 }
 .win-button-widget .label {
     font-size: 18px;
+}
+
+
+/* SYSTEM TRY */
+
+
+.systray {
+    background: transparent;
+    border: None;
+    margin: 0;
+}
+
+.systray .unpinned-container {
+    background: transparent;
+    border-radius: 8px;
+}
+
+.systray .pinned-container {
+    background: transparent;
+}
+
+/* .systray .pinned-container[forceshow=true] {
+    background: red;
+} */
+
+.systray .button {
+    border-radius: 4px;
+    padding: 0 6px;
+	margin: 4px;
+}
+
+.systray .button:hover {
+    background: #727272;
+}
+
+.systray .button[dragging=true] {
+    background: orange;
+    border-color: #FF8800;
+}
+
+.systray .unpinned-visibility-btn {
+    border-radius: 4px;
+    height: 20px;
+    width: 16px;
+}
+
+.systray .unpinned-visibility-btn:checked {
+    background: transparent;
+}
+
+.systray .unpinned-visibility-btn:hover {
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    border-color: #AAAAAA;
 }
