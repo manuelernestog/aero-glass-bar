@@ -36,10 +36,11 @@ bars:
         ]
       right:
         [
-          "media",
           "systray",
+          "media",
           "volume",
           "battery",
+          "apps_alt",
           "wifi",
           "apps",
           "power_menu"
@@ -60,8 +61,8 @@ widgets:
       icons:
         prev_track: "\ue892"
         next_track: "\ue893"
-        play: "\ue768"
-        pause: "\ue769"
+        play: "\uf01d"
+        pause: "\uf28c"
   active_window:
     type: "yasb.active_window.ActiveWindowWidget"
     options:
@@ -83,6 +84,7 @@ widgets:
       #timezones: ["America/Montreal"]
       callbacks:
         on_left: "exec notification_center"
+        on_right: "exec cmd.exe /c start ms-clock:"
   weather:
     type: "yasb.weather.WeatherWidget"
     options:
@@ -145,6 +147,17 @@ widgets:
         left: 0
         bottom: 0
         right: 0
+  apps_alt:
+    type: "yasb.applications.ApplicationsWidget"
+    options:
+      label: "{data}"
+      app_list:
+        - {icon: "\udb81\udd82", launch: "wireguard.exe"}
+      container_padding: 
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
   win_button:
     type: "yasb.custom.CustomWidget"
     options:
@@ -187,6 +200,6 @@ widgets:
       label_collapsed: "▼"
       label_expanded: "▶"
       label_position: "left" # Can be "left" or "right"
-      icon_size: 16 # Can be any integer between 8 and 64
+      icon_size: 15 # Can be any integer between 8 and 64
       pin_click_modifier: "alt" # Can be "ctrl", "alt" or "shift"
       show_unpinned: false

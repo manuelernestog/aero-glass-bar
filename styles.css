@@ -121,33 +121,31 @@
 /* MEDIA WIDGET */
 .media-widget {
 	padding: 0;
-	padding-left: 2px;
 	margin: 0;
 	border-radius: 16px;
-	margin-right: 8px;
 }
 .media-widget .label {
+	display: none;
 	background-color: rgba(0, 0, 0, 0.0);
 }
 .media-widget .btn {
-	color: #acb2c9;
-	padding: 0 3px;
+	color: #ffffff;
+	padding: 0 0;
 	margin: 4px 0;
     font-weight: 500;
 	font-family: Segoe Fluent Icons;
+	font-size: 10px;
 }
 .media-widget .btn:hover {
 	color: #ffffff;
 }
 .media-widget .btn.play {
-	background-color: rgba(255, 255, 255, 0.1);
-	border-radius: 14px;
-	font-size: 16px;
+	font-size: 17px;
 }
 .media-widget .btn.disabled:hover,
 .media-widget .btn.disabled {
 	color: #7d8297;
-	font-size: 12px;
+	font-size: 10px;
 	background-color: rgba(0, 0, 0, 0);
 }
 
@@ -166,7 +164,6 @@
 
 /* SYSTEM TRY */
 
-
 .systray {
     background: transparent;
     border: None;
@@ -182,10 +179,6 @@
     background: transparent;
 }
 
-/* .systray .pinned-container[forceshow=true] {
-    background: red;
-} */
-
 .systray .button {
     border-radius: 4px;
     padding: 0 6px;
@@ -193,7 +186,7 @@
 }
 
 .systray .button:hover {
-    background: #727272;
+    background: transparent;
 }
 
 .systray .button[dragging=true] {
@@ -212,7 +205,5 @@
 }
 
 .systray .unpinned-visibility-btn:hover {
-    border: 1px solid #AAAAAA;
     border-radius: 4px;
-    border-color: #AAAAAA;
 }
