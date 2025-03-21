@@ -28,7 +28,7 @@ bars:
     widgets:
       left:
         [
-          "win_button",
+          "home",
           "active_window"
         ] 
       center: [
@@ -166,6 +166,25 @@ widgets:
       class_name: "win-button-widget"
       callbacks:
         on_left: "exec start_menu"
+  home:
+    type: "yasb.home.HomeWidget"
+    options:
+      label: "\udb82\udea5"
+      menu_list:
+      - { title: "User Home", path: "~" }
+      - { title: "Download", path: "~\\Downloads" }
+      - { title: "Documents", path: "~\\Documents" }
+      - { title: "Pictures", path: "~\\Pictures" }
+      system_menu: true
+      power_menu: true
+      blur: true
+      border_color: "None"
+      round_corners_type: "small"
+      container_padding:
+        top: 0
+        left: 6
+        bottom: 0
+        right: 12
   battery:
     type: "yasb.battery.BatteryWidget"
     options:
@@ -197,8 +216,8 @@ widgets:
     type: "yasb.systray.SystrayWidget"
     options:
       class_name: "systray"
-      label_collapsed: "▼"
-      label_expanded: "▶"
+      label_collapsed: "\udb81\udeb6"
+      label_expanded: "\udb82\ude03"
       label_position: "left" # Can be "left" or "right"
       icon_size: 15 # Can be any integer between 8 and 64
       pin_click_modifier: "alt" # Can be "ctrl", "alt" or "shift"
