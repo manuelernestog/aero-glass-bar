@@ -55,7 +55,7 @@ widgets:
         label: 20
         label_alt: 30
       show_thumbnail: false
-      controls_only: false
+      controls_only: true
       controls_left: true
       hide_empty: true
       icons:

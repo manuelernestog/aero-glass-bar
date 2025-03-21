@@ -121,7 +121,7 @@
 /* MEDIA WIDGET */
 .media-widget {
 	padding: 0;
-	margin: 0;
+	margin: 0 3px;
 	border-radius: 16px;
 }
 .media-widget .label {
@@ -134,7 +134,7 @@
 	margin: 4px 0;
     font-weight: 500;
 	font-family: Segoe Fluent Icons;
-	font-size: 10px;
+	font-size: 9px;
 }
 .media-widget .btn:hover {
 	color: #ffffff;
@@ -145,7 +145,7 @@
 .media-widget .btn.disabled:hover,
 .media-widget .btn.disabled {
 	color: #7d8297;
-	font-size: 10px;
+	font-size: 9px;
 	background-color: rgba(0, 0, 0, 0);
 }
 
