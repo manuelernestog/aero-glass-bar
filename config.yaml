@@ -84,8 +84,14 @@ widgets:
       timezones: [] #Looking up time zone info from registry
       #timezones: ["America/Montreal"]
       callbacks:
-        on_left: "exec notification_center"
         on_right: "exec cmd.exe /c start ms-clock:"
+      calendar: 
+        blur: True
+        round_corners: True
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "center"
+        direction: "down"
   weather:
     type: "yasb.weather.WeatherWidget"
     options:
