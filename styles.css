@@ -118,7 +118,7 @@
 /* MEDIA WIDGET */
 .media-widget {
 	padding: 0;
-	margin: 0 4px;
+	margin: 0 8px 0 0px;
 	border-radius: 16px;
 }
 .media-widget .label {
@@ -128,10 +128,10 @@
 .media-widget .btn {
 	color: #ffffff;
 	padding: 0 0;
-	margin: 4px 0;
+	margin: 0px 0;
     font-weight: 500;
 	font-family: Segoe Fluent Icons;
-	font-size: 10px;
+	font-size: 1px;
 }
 .media-widget .btn:hover {
 	color: #ffffff;
@@ -142,7 +142,6 @@
 .media-widget .btn.disabled:hover,
 .media-widget .btn.disabled {
 	color: #7d8297;
-	font-size: 10px;
 	background-color: rgba(0, 0, 0, 0);
 }
 
