@@ -130,7 +130,7 @@ widgets:
         round_corners: true
         round_corners_type: 'normal'
         border_color: 'System'
-        alignment: 'right'
+        alignment: 'center'
         direction: 'down'
   power_menu:
     type: "yasb.power_menu.PowerMenuWidget"
