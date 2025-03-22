@@ -39,10 +39,10 @@ bars:
           "systray",
           "media",
           "volume",
-          "battery",
           "apps_alt",
           "wifi",
-          "apps",
+          "battery",
+          "settings",
           "notifications",
           "power_menu"
         ]
@@ -136,7 +136,7 @@ widgets:
         restart: ["\uead2","Restart"]
         hibernate: ["\uf28e","Hibernate"]
         cancel: ["\udb81\udf3a","Cancel"]
-  apps:
+  settings:
     type: "yasb.applications.ApplicationsWidget"
     options:
       label: "{data}"
