@@ -236,3 +236,19 @@
     max-height: 1px;
     background-color: rgba(157, 180, 141, 0.116);
 }
+
+
+/* NOTIFICATIONS */
+
+
+.notification-widget {
+    padding: 0 8px 0 8px;
+}
+
+.notification-widget .widget-container {
+	margin: 0;
+}
+
+.notification-widget .icon {
+    font-size: 15px;
+}

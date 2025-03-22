@@ -43,6 +43,7 @@ bars:
           "apps_alt",
           "wifi",
           "apps",
+          "notifications",
           "power_menu"
         ]
 widgets:
@@ -140,8 +141,7 @@ widgets:
     options:
       label: "{data}"
       app_list:
-        - {icon: "\ueb51", launch: "quick_settings"}
-        - {icon: "\uf0a2", launch: "notification_center"}
+        - {icon: "\ue690", launch: "quick_settings"}
       container_padding: 
         top: 0
         left: 0
@@ -222,3 +222,13 @@ widgets:
       icon_size: 15 # Can be any integer between 8 and 64
       pin_click_modifier: "alt" # Can be "ctrl", "alt" or "shift"
       show_unpinned: false
+  notifications:
+    type: "yasb.notifications.NotificationsWidget"
+    options:
+      label: "<span>\udb80\udd78</span>"
+      hide_empty: true
+      tooltip: false
+      callbacks:
+        on_left: "toggle_notification"
+        on_right: "do_nothing"
+        on_middle: "do_nothing"
