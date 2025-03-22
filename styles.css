@@ -207,7 +207,6 @@
 
 /* HOME MENU */
 
-
 .home-widget {
     padding: 2px 4px 2px 0px;    
 }
@@ -240,7 +239,6 @@
 
 /* NOTIFICATIONS */
 
-
 .notification-widget {
     padding: 0 8px 0 8px;
 }
@@ -251,4 +249,27 @@
 
 .notification-widget .icon {
     font-size: 15px;
+}
+
+/*AUDIO DROPDOWN*/
+
+.audio-menu {
+	background-color: rgba(36, 36, 36, 0.604);
+	padding: 0 0 12px 0 
+}
+.audio-container .device {
+	font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    border: none;
+    padding: 7px 4px 7px 4px;
+    margin: 2px 0;
+    border-radius: 4px;
+	text-align: left;
+}
+.audio-container .device.selected {
+    background-color: rgba(255, 255, 255, 0.085);
+}
+.audio-container .device:hover {
+    background-color: rgba(255, 255, 255, 0.06);
 }

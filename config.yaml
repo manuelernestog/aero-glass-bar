@@ -119,7 +119,13 @@ widgets:
         - "\uf028"  # Icon for 61-100% volume
       callbacks:
         on_right: "exec cmd.exe /c start ms-settings:sound"
-        on_left: "exec quick_settings"
+      audio_menu:
+        blur: true
+        round_corners: true
+        round_corners_type: 'normal'
+        border_color: 'System'
+        alignment: 'right'
+        direction: 'down'
   power_menu:
     type: "yasb.power_menu.PowerMenuWidget"
     options:
