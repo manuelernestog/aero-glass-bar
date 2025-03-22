@@ -129,10 +129,10 @@
 .media-widget .btn {
 	color: #ffffff;
 	padding: 0 0;
-	margin: 4px -1;
+	margin: 4px 0;
     font-weight: 500;
 	font-family: Segoe Fluent Icons;
-	font-size: 8px;
+	font-size: 10px;
 }
 .media-widget .btn:hover {
 	color: #ffffff;
@@ -143,7 +143,7 @@
 .media-widget .btn.disabled:hover,
 .media-widget .btn.disabled {
 	color: #7d8297;
-	font-size: 8px;
+	font-size: 10px;
 	background-color: rgba(0, 0, 0, 0);
 }
 
