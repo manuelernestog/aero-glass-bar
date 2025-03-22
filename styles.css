@@ -210,8 +210,7 @@
     padding: 2px 4px 2px 0px;    
 }
 .home-widget .widget-container {
-    background-color: rgba(36, 36, 36, 0.604);
-    border-radius: 8px;    
+    background-color: transparent;
 }
 .home-widget .icon:hover {
     color: white;
